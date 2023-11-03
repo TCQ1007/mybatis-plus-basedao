@@ -19,8 +19,24 @@ public class IdConfigDao extends BaseDao<IdConfigDDO> {
 
 只需要这样就可以通过IdConfigDao 可以同时使用BaseMapper的方法和IService的方法
 
+# 安装和使用
+
+可以通过以下命令行将jar包安装到自己的本地仓库
+
+```cmd
+mvn install:install-file -Dfile=mbp-basedao-0.0.1-SNAPSHOT.jar -DartifactId=mbp-basedao -DgroupId=org.tcloud.jsr -Dversion=0.0.1-SNAPSHOT -Dpackaging=jar
+```
+
+```xml
+		<dependency>
+			<groupId>org.tcloud.jsr</groupId>
+			<artifactId>mbp-basedao</artifactId>
+			<version>0.0.1-SNAPSHOT</version>
+		</dependency>
+```
 
 
-还待完善的地方
+
+# 还待完善的地方
 
 1、如果有想自己写BaseMapper 的话，可以再提供一个判断如果已经有了，那么就不帮coder自动生成的逻辑。
