@@ -1,4 +1,4 @@
-package tcloud.jsr.mbp.processor;
+package org.tcloud.jsr.mbp.processor;
 
 import com.google.auto.service.AutoService;
 import java.io.IOException;
@@ -18,18 +18,16 @@ import javax.lang.model.element.PackageElement;
 import javax.lang.model.element.TypeElement;
 import javax.lang.model.type.DeclaredType;
 import javax.lang.model.type.MirroredTypeException;
-import javax.lang.model.util.ElementFilter;
 import javax.lang.model.util.Elements;
-import javax.lang.model.util.Types;
 import javax.tools.JavaFileObject;
-import tcloud.jsr.mbp.annotation.IMapper;
+import org.tcloud.jsr.mbp.annotation.IMapper;
 
 /**
  * @Author Administrator
  * @Date 2023/11/2 20:30
  * @Description
  **/
-@SupportedAnnotationTypes("tcloud.jsr.mbp.annotation.IMapper")
+@SupportedAnnotationTypes("org.tcloud.jsr.mbp.annotation.IMapper")
 @SupportedSourceVersion(SourceVersion.RELEASE_8)
 @AutoService(Processor.class)
 public class IMapperProcessor extends AbstractProcessor {

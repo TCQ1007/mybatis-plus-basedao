@@ -1,4 +1,4 @@
-package tcloud.jsr.mbp.annotation;
+package org.tcloud.jsr.mbp.annotation;
 
 import java.lang.annotation.ElementType;
 import java.lang.annotation.Retention;
